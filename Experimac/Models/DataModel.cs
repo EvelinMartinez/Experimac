@@ -17,5 +17,15 @@ namespace Experimac.Models
         /// </summary>
         public DataModel() : base("DataModel") { }
 
+        public DbSet<Clientes> clientes { get; set; }
+        public DbSet<Usuarios> usuarios { get; set; }
+        public DbSet<servicios> servicios { get; set; }
+        public DbSet<Solicita> solicita { get; set; }
+        public DbSet<Ordenes> ordenes { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
