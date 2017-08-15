@@ -16,3 +16,4 @@ C:\Users\evelin\Source\Repos\Experimac\Experimac\bin\Debug\EntityFramework.xml
 C:\Users\evelin\Source\Repos\Experimac\Experimac\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\evelin\Source\Repos\Experimac\Experimac\obj\Debug\Experimac.exe
 C:\Users\evelin\Source\Repos\Experimac\Experimac\obj\Debug\Experimac.pdb
+C:\Users\evelin\Source\Repos\Experimac\Experimac\obj\Debug\Experimac.Migrations.exp.resources

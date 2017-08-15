@@ -9,8 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Experimac.Models
 {
-     public class Solicita
-    {
+    
         [Table ("solicita")]
         public class solicita
         {
@@ -36,4 +35,4 @@ namespace Experimac.Models
             }
         }
     }
-}
+

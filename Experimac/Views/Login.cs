@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using Experimac.Models;
+using Experimac.Controlador;
 
 namespace Experimac.Views
 {
@@ -20,6 +24,31 @@ namespace Experimac.Views
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if(txtPassword.Text != "" && txtUsuario.Text != "")
+            {
+                Usuarios usuario = UsuariosMaster.validarLogin(txtUsuario.Text, txtPassword.Text);
+                if(usuario != null)
+                {
+                    Form1.usuario = usuario;
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Datos Incorrectos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            // this.Close();
+            Application.Exit();
         }
     }
 }

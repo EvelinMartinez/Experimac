@@ -48,7 +48,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtTipoModelo = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtEstadoBateria = new System.Windows.Forms.TextBox();
             this.txtAppleId = new System.Windows.Forms.TextBox();
-            this.txtTamanio = new System.Windows.Forms.TextBox();
             this.txtNucleos = new System.Windows.Forms.TextBox();
             this.txtAlmacenamientoDos = new System.Windows.Forms.TextBox();
             this.txtCiclosBateria = new System.Windows.Forms.TextBox();
@@ -118,7 +116,6 @@
             this.txtMouse = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panellow = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -159,13 +156,17 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RBVistaPrevia = new System.Windows.Forms.RadioButton();
             this.RBAutorizacion = new System.Windows.Forms.RadioButton();
             this.RBComents = new System.Windows.Forms.RadioButton();
             this.RBEvaluacion = new System.Windows.Forms.RadioButton();
             this.RBInico = new System.Windows.Forms.RadioButton();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panellow = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -346,13 +347,6 @@
             this.textBox4.Size = new System.Drawing.Size(250, 22);
             this.textBox4.TabIndex = 17;
             // 
-            // txtTipoModelo
-            // 
-            this.txtTipoModelo.Location = new System.Drawing.Point(169, 126);
-            this.txtTipoModelo.Name = "txtTipoModelo";
-            this.txtTipoModelo.Size = new System.Drawing.Size(139, 22);
-            this.txtTipoModelo.TabIndex = 20;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -460,13 +454,6 @@
             this.txtAppleId.Name = "txtAppleId";
             this.txtAppleId.Size = new System.Drawing.Size(139, 22);
             this.txtAppleId.TabIndex = 48;
-            // 
-            // txtTamanio
-            // 
-            this.txtTamanio.Location = new System.Drawing.Point(390, 122);
-            this.txtTamanio.Name = "txtTamanio";
-            this.txtTamanio.Size = new System.Drawing.Size(93, 22);
-            this.txtTamanio.TabIndex = 22;
             // 
             // txtNucleos
             // 
@@ -968,25 +955,17 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // panellow
-            // 
-            this.panellow.BackgroundImage = global::Experimac.Properties.Resources.logo_experimac1;
-            this.panellow.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panellow.ForeColor = System.Drawing.Color.Teal;
-            this.panellow.Location = new System.Drawing.Point(3, 546);
-            this.panellow.Name = "panellow";
-            this.panellow.Size = new System.Drawing.Size(1250, 82);
-            this.panellow.TabIndex = 18;
-            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.CheckBox);
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.txtMouse);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.txtTeclado);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.txtVolumen);
-            this.tabPage2.Controls.Add(this.txtTipoModelo);
             this.tabPage2.Controls.Add(this.txtBluetooh);
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.txtInalambrico);
@@ -1010,7 +989,6 @@
             this.tabPage2.Controls.Add(this.txtPuertoUsb);
             this.tabPage2.Controls.Add(this.txtAppleId);
             this.tabPage2.Controls.Add(this.txtBocinasAltavoz);
-            this.tabPage2.Controls.Add(this.txtTamanio);
             this.tabPage2.Controls.Add(this.label47);
             this.tabPage2.Controls.Add(this.txtNucleos);
             this.tabPage2.Controls.Add(this.label46);
@@ -1480,16 +1458,6 @@
             this.panel1.Size = new System.Drawing.Size(1264, 66);
             this.panel1.TabIndex = 90;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Experimac.Properties.Resources.logo_experimac;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 50);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // RBVistaPrevia
             // 
             this.RBVistaPrevia.Appearance = System.Windows.Forms.Appearance.Button;
@@ -1584,6 +1552,68 @@
             this.lblFecha.Size = new System.Drawing.Size(0, 16);
             this.lblFecha.TabIndex = 19;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Experimac.Properties.Resources.logo_experimac;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 50);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panellow
+            // 
+            this.panellow.BackgroundImage = global::Experimac.Properties.Resources.logo_experimac1;
+            this.panellow.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panellow.ForeColor = System.Drawing.Color.Teal;
+            this.panellow.Location = new System.Drawing.Point(3, 546);
+            this.panellow.Name = "panellow";
+            this.panellow.Size = new System.Drawing.Size(1250, 82);
+            this.panellow.TabIndex = 18;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "MacBook ",
+            "MacBook Pro",
+            "MacBook White",
+            "MacBook Air",
+            "Imac Thin",
+            "Imac Thick",
+            "Mouse",
+            "Teclado"});
+            this.comboBox1.Location = new System.Drawing.Point(169, 124);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(139, 24);
+            this.comboBox1.TabIndex = 88;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "11\"",
+            "12\"",
+            "13\"",
+            "15\"",
+            "21.5\"",
+            "27\""});
+            this.comboBox2.Location = new System.Drawing.Point(390, 120);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(56, 24);
+            this.comboBox2.TabIndex = 89;
+            // 
+            // CheckBox
+            // 
+            this.CheckBox.AutoSize = true;
+            this.CheckBox.Location = new System.Drawing.Point(440, 294);
+            this.CheckBox.Name = "CheckBox";
+            this.CheckBox.Size = new System.Drawing.Size(185, 20);
+            this.CheckBox.TabIndex = 90;
+            this.CheckBox.Text = "El dispositivo no Enciende";
+            this.CheckBox.UseVisualStyleBackColor = true;
+            // 
             // Orden_ServicioMac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1631,7 +1661,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txtTipoModelo;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -1644,7 +1673,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox txtEstadoBateria;
         private System.Windows.Forms.TextBox txtAppleId;
-        private System.Windows.Forms.TextBox txtTamanio;
         private System.Windows.Forms.TextBox txtNucleos;
         private System.Windows.Forms.TextBox txtAlmacenamientoDos;
         private System.Windows.Forms.TextBox txtCiclosBateria;
@@ -1749,5 +1777,8 @@
         private System.Windows.Forms.RadioButton RBEvaluacion;
         private System.Windows.Forms.RadioButton RBInico;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox CheckBox;
     }
 }

@@ -31,9 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.Nomb_Cli = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,23 +49,17 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.txtEquipo = new System.Windows.Forms.TextBox();
             this.txtTamaño = new System.Windows.Forms.TextBox();
             this.txtSerie = new System.Windows.Forms.TextBox();
-            this.txtAppleId = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtAlmacenamiento = new System.Windows.Forms.TextBox();
             this.txtIMEI = new System.Windows.Forms.TextBox();
-            this.txtPassAppleId = new System.Windows.Forms.TextBox();
             this.txtTipoModelo = new System.Windows.Forms.TextBox();
-            this.txtEstadoBateria = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.txtCiclosBat = new System.Windows.Forms.TextBox();
@@ -107,6 +99,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.tabControlPrincipal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -130,6 +123,8 @@
             this.txtComentarios = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -146,15 +141,15 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RBVistaPrevia = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RBAutorizacion = new System.Windows.Forms.RadioButton();
             this.RBComents = new System.Windows.Forms.RadioButton();
             this.RBEvaluacion = new System.Windows.Forms.RadioButton();
             this.RBInico = new System.Windows.Forms.RadioButton();
-            this.RBVistaPrevia = new System.Windows.Forms.RadioButton();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblOrden = new System.Windows.Forms.Label();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -184,13 +179,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Fecha";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(138, 94);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(215, 22);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -200,13 +188,6 @@
             this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "No. Orden";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(722, 92);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(80, 22);
-            this.numericUpDown1.TabIndex = 4;
             // 
             // Nomb_Cli
             // 
@@ -329,7 +310,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(265, 282);
+            this.label7.Location = new System.Drawing.Point(25, 350);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 15);
             this.label7.TabIndex = 25;
@@ -339,7 +320,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(519, 277);
+            this.label12.Location = new System.Drawing.Point(395, 324);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(141, 15);
             this.label12.TabIndex = 29;
@@ -348,7 +329,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(29, 310);
+            this.label13.Location = new System.Drawing.Point(33, 313);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 16);
             this.label13.TabIndex = 19;
@@ -357,25 +338,16 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(29, 282);
+            this.label14.Location = new System.Drawing.Point(27, 285);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(62, 16);
             this.label14.TabIndex = 17;
             this.label14.Text = "TAMAÑO";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(33, 341);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 16);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "APPLE ID";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(287, 251);
+            this.label16.Location = new System.Drawing.Point(418, 285);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(20, 16);
             this.label16.TabIndex = 23;
@@ -384,27 +356,17 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(521, 304);
+            this.label17.Location = new System.Drawing.Point(415, 364);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(34, 16);
             this.label17.TabIndex = 31;
             this.label17.Text = "IMEI";
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(519, 339);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(92, 15);
-            this.label18.TabIndex = 33;
-            this.label18.Text = "PASS APPLE ID";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(521, 249);
+            this.label19.Location = new System.Drawing.Point(395, 255);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(108, 15);
             this.label19.TabIndex = 27;
@@ -414,7 +376,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(751, 277);
+            this.label20.Location = new System.Drawing.Point(771, 277);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(123, 15);
             this.label20.TabIndex = 37;
@@ -424,87 +386,59 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(795, 245);
+            this.label21.Location = new System.Drawing.Point(771, 249);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(58, 15);
             this.label21.TabIndex = 35;
             this.label21.Text = "MODELO";
             // 
-            // txtEquipo
-            // 
-            this.txtEquipo.Location = new System.Drawing.Point(147, 251);
-            this.txtEquipo.Name = "txtEquipo";
-            this.txtEquipo.Size = new System.Drawing.Size(100, 22);
-            this.txtEquipo.TabIndex = 16;
-            // 
             // txtTamaño
             // 
-            this.txtTamaño.Location = new System.Drawing.Point(147, 279);
+            this.txtTamaño.Location = new System.Drawing.Point(154, 282);
             this.txtTamaño.Name = "txtTamaño";
-            this.txtTamaño.Size = new System.Drawing.Size(100, 22);
+            this.txtTamaño.Size = new System.Drawing.Size(116, 22);
             this.txtTamaño.TabIndex = 18;
             // 
             // txtSerie
             // 
-            this.txtSerie.Location = new System.Drawing.Point(147, 307);
+            this.txtSerie.Location = new System.Drawing.Point(154, 310);
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(189, 22);
             this.txtSerie.TabIndex = 20;
             // 
-            // txtAppleId
-            // 
-            this.txtAppleId.Location = new System.Drawing.Point(147, 335);
-            this.txtAppleId.Name = "txtAppleId";
-            this.txtAppleId.Size = new System.Drawing.Size(189, 22);
-            this.txtAppleId.TabIndex = 22;
-            // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(392, 245);
+            this.txtId.Location = new System.Drawing.Point(551, 285);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(123, 22);
             this.txtId.TabIndex = 24;
             // 
             // txtAlmacenamiento
             // 
-            this.txtAlmacenamiento.Location = new System.Drawing.Point(392, 275);
+            this.txtAlmacenamiento.Location = new System.Drawing.Point(154, 343);
             this.txtAlmacenamiento.Name = "txtAlmacenamiento";
-            this.txtAlmacenamiento.Size = new System.Drawing.Size(123, 22);
+            this.txtAlmacenamiento.Size = new System.Drawing.Size(116, 22);
             this.txtAlmacenamiento.TabIndex = 26;
             // 
             // txtIMEI
             // 
-            this.txtIMEI.Location = new System.Drawing.Point(561, 298);
+            this.txtIMEI.Location = new System.Drawing.Point(551, 358);
             this.txtIMEI.Name = "txtIMEI";
             this.txtIMEI.Size = new System.Drawing.Size(184, 22);
             this.txtIMEI.TabIndex = 32;
             // 
-            // txtPassAppleId
-            // 
-            this.txtPassAppleId.Location = new System.Drawing.Point(617, 332);
-            this.txtPassAppleId.Name = "txtPassAppleId";
-            this.txtPassAppleId.Size = new System.Drawing.Size(128, 22);
-            this.txtPassAppleId.TabIndex = 34;
-            // 
             // txtTipoModelo
             // 
-            this.txtTipoModelo.Location = new System.Drawing.Point(635, 242);
+            this.txtTipoModelo.Location = new System.Drawing.Point(551, 254);
             this.txtTipoModelo.Name = "txtTipoModelo";
-            this.txtTipoModelo.Size = new System.Drawing.Size(110, 22);
+            this.txtTipoModelo.Size = new System.Drawing.Size(123, 22);
             this.txtTipoModelo.TabIndex = 28;
-            // 
-            // txtEstadoBateria
-            // 
-            this.txtEstadoBateria.Location = new System.Drawing.Point(661, 270);
-            this.txtEstadoBateria.Name = "txtEstadoBateria";
-            this.txtEstadoBateria.Size = new System.Drawing.Size(84, 22);
-            this.txtEstadoBateria.TabIndex = 30;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(786, 336);
+            this.label22.Location = new System.Drawing.Point(771, 310);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(88, 15);
             this.label22.TabIndex = 39;
@@ -512,23 +446,23 @@
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(869, 243);
+            this.txtModelo.Location = new System.Drawing.Point(911, 242);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(111, 22);
             this.txtModelo.TabIndex = 36;
             // 
             // txtCiclosBat
             // 
-            this.txtCiclosBat.Location = new System.Drawing.Point(880, 271);
+            this.txtCiclosBat.Location = new System.Drawing.Point(911, 273);
             this.txtCiclosBat.Name = "txtCiclosBat";
-            this.txtCiclosBat.Size = new System.Drawing.Size(100, 22);
+            this.txtCiclosBat.Size = new System.Drawing.Size(111, 22);
             this.txtCiclosBat.TabIndex = 38;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(882, 330);
+            this.txtPassword.Location = new System.Drawing.Point(911, 310);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 22);
+            this.txtPassword.Size = new System.Drawing.Size(111, 22);
             this.txtPassword.TabIndex = 40;
             // 
             // label23
@@ -828,13 +762,15 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblOrden);
+            this.tabPage1.Controls.Add(this.comboBox2);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.lblFecha);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.Nomb_Cli);
-            this.tabPage1.Controls.Add(this.numericUpDown1);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.lblCorreo);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label9);
@@ -848,23 +784,17 @@
             this.tabPage1.Controls.Add(this.label12);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.txtEquipo);
             this.tabPage1.Controls.Add(this.txtTamaño);
             this.tabPage1.Controls.Add(this.txtSerie);
-            this.tabPage1.Controls.Add(this.txtAppleId);
             this.tabPage1.Controls.Add(this.txtId);
             this.tabPage1.Controls.Add(this.txtAlmacenamiento);
             this.tabPage1.Controls.Add(this.txtIMEI);
-            this.tabPage1.Controls.Add(this.txtPassAppleId);
             this.tabPage1.Controls.Add(this.txtTipoModelo);
-            this.tabPage1.Controls.Add(this.txtEstadoBateria);
             this.tabPage1.Controls.Add(this.label22);
             this.tabPage1.Controls.Add(this.txtModelo);
             this.tabPage1.Controls.Add(this.txtCiclosBat);
@@ -877,6 +807,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(144, 94);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(35, 16);
+            this.lblFecha.TabIndex = 41;
+            this.lblFecha.Text = "Date";
             // 
             // tabPage2
             // 
@@ -1138,6 +1077,26 @@
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnCancelar.Location = new System.Drawing.Point(890, 421);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(104, 35);
+            this.btnCancelar.TabIndex = 18;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnImprimir.Location = new System.Drawing.Point(780, 421);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(104, 35);
+            this.btnImprimir.TabIndex = 17;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -1316,6 +1275,24 @@
             this.panel1.Size = new System.Drawing.Size(1264, 86);
             this.panel1.TabIndex = 94;
             // 
+            // RBVistaPrevia
+            // 
+            this.RBVistaPrevia.Appearance = System.Windows.Forms.Appearance.Button;
+            this.RBVistaPrevia.AutoSize = true;
+            this.RBVistaPrevia.FlatAppearance.BorderSize = 0;
+            this.RBVistaPrevia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.RBVistaPrevia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.RBVistaPrevia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RBVistaPrevia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RBVistaPrevia.Location = new System.Drawing.Point(526, 28);
+            this.RBVistaPrevia.Name = "RBVistaPrevia";
+            this.RBVistaPrevia.Size = new System.Drawing.Size(87, 26);
+            this.RBVistaPrevia.TabIndex = 5;
+            this.RBVistaPrevia.TabStop = true;
+            this.RBVistaPrevia.Text = "Vista Previa";
+            this.RBVistaPrevia.UseVisualStyleBackColor = true;
+            this.RBVistaPrevia.CheckedChanged += new System.EventHandler(this.RBVistaPrevia_CheckedChanged);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Experimac.Properties.Resources.logo_experimac;
@@ -1377,6 +1354,7 @@
             this.RBEvaluacion.TabStop = true;
             this.RBEvaluacion.Text = "Evaluación";
             this.RBEvaluacion.UseVisualStyleBackColor = true;
+            this.RBEvaluacion.CheckedChanged += new System.EventHandler(this.RBEvaluacion_CheckedChanged);
             // 
             // RBInico
             // 
@@ -1397,42 +1375,40 @@
             this.RBInico.UseVisualStyleBackColor = true;
             this.RBInico.CheckedChanged += new System.EventHandler(this.RBInico_CheckedChanged);
             // 
-            // RBVistaPrevia
+            // comboBox1
             // 
-            this.RBVistaPrevia.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RBVistaPrevia.AutoSize = true;
-            this.RBVistaPrevia.FlatAppearance.BorderSize = 0;
-            this.RBVistaPrevia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.RBVistaPrevia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.RBVistaPrevia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RBVistaPrevia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RBVistaPrevia.Location = new System.Drawing.Point(526, 28);
-            this.RBVistaPrevia.Name = "RBVistaPrevia";
-            this.RBVistaPrevia.Size = new System.Drawing.Size(87, 26);
-            this.RBVistaPrevia.TabIndex = 5;
-            this.RBVistaPrevia.TabStop = true;
-            this.RBVistaPrevia.Text = "Vista Previa";
-            this.RBVistaPrevia.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "IPhone ",
+            "IPad",
+            "Ipod",
+            "Iwatch"});
+            this.comboBox1.Location = new System.Drawing.Point(154, 251);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(116, 24);
+            this.comboBox1.TabIndex = 42;
             // 
-            // btnImprimir
+            // comboBox2
             // 
-            this.btnImprimir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnImprimir.Location = new System.Drawing.Point(780, 421);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(104, 35);
-            this.btnImprimir.TabIndex = 17;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Bueno",
+            "Regular",
+            "Normal",
+            "N/D"});
+            this.comboBox2.Location = new System.Drawing.Point(551, 320);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 43;
             // 
-            // btnCancelar
+            // lblOrden
             // 
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnCancelar.Location = new System.Drawing.Point(890, 421);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(104, 35);
-            this.btnCancelar.TabIndex = 18;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.lblOrden.AutoSize = true;
+            this.lblOrden.Location = new System.Drawing.Point(714, 94);
+            this.lblOrden.Name = "lblOrden";
+            this.lblOrden.Size = new System.Drawing.Size(63, 16);
+            this.lblOrden.TabIndex = 44;
+            this.lblOrden.Text = "No.Orden";
             // 
             // Form1
             // 
@@ -1450,7 +1426,6 @@
             this.Text = "Orden de Servicio ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabControlPrincipal.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1472,9 +1447,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label Nomb_Cli;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -1492,23 +1465,17 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox txtEquipo;
         private System.Windows.Forms.TextBox txtTamaño;
         private System.Windows.Forms.TextBox txtSerie;
-        private System.Windows.Forms.TextBox txtAppleId;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtAlmacenamiento;
         private System.Windows.Forms.TextBox txtIMEI;
-        private System.Windows.Forms.TextBox txtPassAppleId;
         private System.Windows.Forms.TextBox txtTipoModelo;
-        private System.Windows.Forms.TextBox txtEstadoBateria;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.TextBox txtCiclosBat;
@@ -1595,6 +1562,10 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.RadioButton RBVistaPrevia;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblOrden;
     }
 }
 

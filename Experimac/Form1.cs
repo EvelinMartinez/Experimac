@@ -15,30 +15,29 @@ namespace Experimac
         public Form1()
         {
             InitializeComponent();
+            
+        }
+        public static Experimac.Models.Usuarios usuario = null;
+        private void Form1_Load(object sender, EventArgs e)
+        {
             if (usuario == null)
             {
                 var login = new Experimac.Views.Login();
-                this.Hide();
                 login.ShowDialog();
                 if (usuario != null)
                 {
-                    this.Show();
                 }
                 else
                 {
                     MessageBox.Show("NECESITA LOGIARSE");
+                    Form1_Load(sender, e);
                 }
             }
-        }
-        Experimac.Models.Usuarios usuario = null;
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void RBInico_CheckedChanged(object sender, EventArgs e) //handles RBInicio.checkedChanged
         {
-            tabControlPrincipal.SelectTab(1);
+            tabControlPrincipal.SelectTab(0);
             //tabControlPrincipal.SelectTab = tabPage1;
             
            // tabpage1.SelectTab=tabPage1;
@@ -46,6 +45,17 @@ namespace Experimac
             //tabPage1.SelectNextControl = tabPage1.Tag.GetType(0);
            // RBInico.Select = RBInico.Select.item(0);
 
+        }
+
+        private void RBEvaluacion_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RBVistaPrevia_CheckedChanged(object sender, EventArgs e)
+        {
+            usuario = null;
+            Form1_Load(sender, e);
         }
     }
 }

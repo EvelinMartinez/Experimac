@@ -63,15 +63,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\GuardarServicio.cs" />
+    <Compile Include="Controlador\ServiciosMaster.cs" />
+    <Compile Include="Controlador\UsuariosMaster.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categoria_Disp.cs" />
+    <Compile Include="Migrations\201708150613168_exp.cs" />
+    <Compile Include="Migrations\201708150613168_exp.Designer.cs">
+      <DependentUpon>201708150613168_exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DataModel.cs" />
-    <Compile Include="Models\Dispositivos.cs" />
     <Compile Include="Models\Ordenes.cs" />
     <Compile Include="Models\servicios.cs" />
     <Compile Include="Models\Solicita.cs" />
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708150613168_exp.resx">
+      <DependentUpon>201708150613168_exp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Orden_ServicioMac.resx">
       <DependentUpon>Orden_ServicioMac.cs</DependentUpon>
@@ -137,9 +146,7 @@
   <ItemGroup>
     <None Include="Resources\login.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
