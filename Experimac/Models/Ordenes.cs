@@ -31,7 +31,7 @@ namespace Experimac.Models
         public ICollection<Usuarios> usuarios { get; set; }
         public ICollection<servicios> servicios { get; set; }
         public ICollection<Clientes> clientes { get; set; }
-        public ICollection<Dispositivos> Dispositivos { get; set; }
+        public ICollection<Ordenes> ordenes { get; set; }
         
 
         public Ordenes()

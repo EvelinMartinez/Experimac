@@ -19,6 +19,9 @@ namespace Experimac.Models
         [Required(ErrorMessage = "Se requiere el nombre del Cliente")]
         public String Nomb_Cliente { get; set; }
 
+         [Required(ErrorMessage = "Se requiere los apellidos del Cliente")]
+        public String Ap_Cliente { get; set; }
+
 
         [Required(ErrorMessage = "Se requiere el correo del Cliente")]
         public String sCorreo { get; set; }

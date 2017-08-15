@@ -74,6 +74,7 @@
     <Compile Include="Models\Dispositivos.cs" />
     <Compile Include="Models\Ordenes.cs" />
     <Compile Include="Models\servicios.cs" />
+    <Compile Include="Models\Solicita.cs" />
     <Compile Include="Models\Usuarios.cs" />
     <Compile Include="Orden_ServicioMac.cs">
       <SubType>Form</SubType>

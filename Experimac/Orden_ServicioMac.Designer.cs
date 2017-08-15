@@ -41,7 +41,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtHora = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -166,6 +165,7 @@
             this.RBComents = new System.Windows.Forms.RadioButton();
             this.RBEvaluacion = new System.Windows.Forms.RadioButton();
             this.RBInico = new System.Windows.Forms.RadioButton();
+            this.lblFecha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -295,13 +295,6 @@
             this.label12.Size = new System.Drawing.Size(119, 16);
             this.label12.TabIndex = 19;
             this.label12.Text = "TIPO DE MODELO";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(123, 120);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(243, 22);
-            this.dateTimePicker1.TabIndex = 2;
             // 
             // txtHora
             // 
@@ -946,6 +939,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblFecha);
             this.tabPage1.Controls.Add(this.panellow);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label2);
@@ -957,7 +951,6 @@
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.txtHora);
             this.tabPage1.Controls.Add(this.numericUpDown1);
             this.tabPage1.Controls.Add(this.txtNombre);
@@ -1583,6 +1576,14 @@
             this.RBInico.Text = "Inicio";
             this.RBInico.UseVisualStyleBackColor = true;
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(125, 120);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(0, 16);
+            this.lblFecha.TabIndex = 19;
+            // 
             // Orden_ServicioMac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1623,7 +1624,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox txtNombre;
@@ -1748,5 +1748,6 @@
         private System.Windows.Forms.RadioButton RBComents;
         private System.Windows.Forms.RadioButton RBEvaluacion;
         private System.Windows.Forms.RadioButton RBInico;
+        private System.Windows.Forms.Label lblFecha;
     }
 }
